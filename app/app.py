@@ -7,7 +7,7 @@ app = FastAPI()
  
 @app.get("/")
 def home():
-    return {"message": "App is running 🚀"}
+    return {"message": "App is running v2 🚀 - CI/CD deployed!"}
  
 @app.get("/health")
 def health():
@@ -20,7 +20,7 @@ def health():
 def info():
     return {
         "app": "DevOps App",
-        "version": "1.0",
+        "version": "2.0",
         "hostname": socket.gethostname(),
         "env": os.getenv("ENV", "dev")
     }
